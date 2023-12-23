@@ -1,0 +1,17 @@
+------函数 f(t)=t 的图形;
+title is 'f(x)=x';
+bgcolour is (255,255, 255);
+
+origin is (0, 0);	-- 设置原点的偏移量;
+scale is (1, 1);
+rot is Pi/6;
+
+fgcolour is (0,0,0);
+for T from 0 to 200 step 1 draw (t, t);
+for T from 0 to 180 step 1 draw (0, t);
+
+clear true;
+
+fgcolour is (255, 0, 0);
+for T from 0 to 50 step 5 draw (t, 0):
+       for T from 0 to 150 step 1 draw (t, sin(t));

@@ -1,0 +1,43 @@
+from enum import Enum
+
+
+class TokenType(Enum):
+    CONST_ID = "CONST_ID"
+    T = "T"
+    FUNC = "FUNC"
+    ORIGIN = "ORIGIN"
+    SCALE = "SCALE"
+    ROT = "ROT"
+    IS = "IS"
+    FOR = "FOR"
+    FROM = "FROM"
+    TO = "TO"
+    STEP = "STEP"
+    DRAW = "DRAW"
+    BGCOLOUR = "BGCOLOUR"
+    FGCOLOUR = "FGCOLOUR"
+    CLEAR = "CLEAR"
+    TITLE = "TITLE"
+    COMMENT = "COMMENT"
+    SEMICO = ";"
+    L_BRACKET = "("
+    R_BRACKET = ")"
+    COMMA = ","
+    QUOTE = "'"
+    COLON = ":"
+    PLUS = "+"
+    MINUS = "-"
+    MUL = "*"
+    DIV = "/"
+    POWER = "**"
+    ERROR = "ERROR"
+    NONTOKEN = "NONTOKEN"
+
+
+class FUNC:
+    SIN = "sin"
+    COS = "cos"
+    TAN = "tan"
+    SQRT = "sqrt"
+    EXP = "exp"
+    LN = "ln"
